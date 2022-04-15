@@ -1,0 +1,1313 @@
+{
+	"info": {
+		"_postman_id": "e3dfb641-84b0-40c9-a818-974dd616edd6",
+		"name": "apivirtual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "Mostrar todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/countries",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/countries",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name400\": \"Francia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/countries",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar OK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch OK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch KO 404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"404"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provinces",
+			"item": [
+				{
+					"name": "Mostrar todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name400\": \"Madrid\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar OK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por país KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/404/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"404",
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por país OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/country/1/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"country",
+								"1",
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch OK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch KO 404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"404"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Places",
+			"item": [
+				{
+					"name": "Mostrar todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/places",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/places",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name400\": \"Lugar 400\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/places",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar OK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch OK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch KO 404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por provincia KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/404/places",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"404",
+								"places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por provincia OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/province/1/places",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"province",
+								"1",
+								"places"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Mostrar todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name400\": \"Antonio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar OK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch OK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch KO 404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Visits",
+			"item": [
+				{
+					"name": "Mostrar todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por ID KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por usuario OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por usuario y lugar OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/1/place/1/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"1",
+								"place",
+								"1",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por usuario y lugar KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404/place/404/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404",
+								"place",
+								"404",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por lugar OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/1/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"1",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por lugar KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/place/404/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"place",
+								"404",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar por usuario KO 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/user/404/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"404",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date400\": \"2020-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/visits",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar OK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar OK",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch OK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch KO 404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/visit/404",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"visit",
+								"404"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
