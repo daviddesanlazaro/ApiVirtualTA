@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Nombre 1",
+    "description": "Descripción 1",
+    "latitude": 15.2,
+    "longitude": 23.8,
+    "province": 1
+  },
+  {
+    "id": 2,
+    "name": "Nombre 2",
+    "description": "Descripción 2",
+    "latitude": 48.1,
+    "longitude": 55.6,
+    "province": 1
+  }
+]

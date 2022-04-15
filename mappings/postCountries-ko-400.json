@@ -1,0 +1,20 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/countries",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"name400\": \"Francia\" }",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "ko-400.json"
+  }
+}

@@ -1,0 +1,8 @@
+{
+ "id": 1,
+ "date": "2020-01-01",
+ "rating": 2.5,
+ "commentary": "Comentario de prueba",
+ "user": 1,
+ "place": 1
+}

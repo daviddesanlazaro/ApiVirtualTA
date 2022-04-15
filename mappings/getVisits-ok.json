@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/visits"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "getVisits-ok.json"
+  }
+}

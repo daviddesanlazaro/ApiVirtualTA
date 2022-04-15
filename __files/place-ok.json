@@ -1,0 +1,8 @@
+{
+ "id": 1,
+ "name": "Nombre del lugar",
+ "description": "Descripción del lugar",
+ "latitude": 15.2,
+ "longitude": 23.8,
+ "province": 1
+}

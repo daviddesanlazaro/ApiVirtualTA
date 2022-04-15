@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "date": "2020-01-01",
+    "rating": 2.5,
+    "commentary": "Comentario de prueba",
+    "user": 1,
+    "place": 1
+  },
+  {
+    "id": 1,
+    "date": "2021-10-10",
+    "rating": 4.5,
+    "commentary": "Comentario de prueba 2",
+    "user": 1,
+    "place": 1
+  }
+]

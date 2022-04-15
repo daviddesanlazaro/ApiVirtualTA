@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "DELETE",
+    "url": "/place/404"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "place-ko-404.json"
+  }
+}

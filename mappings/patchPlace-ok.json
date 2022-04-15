@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "PATCH",
+    "urlPattern": "/place/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "place-ok.json"
+  }
+}
